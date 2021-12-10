@@ -1,18 +1,24 @@
 class Mentor
-    attr_accessor :name
+    attr_accessor :kirameki
     
-    def initialize(name)
-        self.name=name
+    def initialize(kirameki)
+        self.kirameki=kirameki
     end
     
     def job
-        puts "#{self.name}です。私は現役のITプロフェッショナルです。"
+        puts "#{self.kirameki}です。私は現役のITプロフェッショナルです。"
     end
 end
 
 class RailsMentor < Mentor
+    attr_accessor :akaide
+    
+    def initialize(akaide)
+        self.akaide=akaide
+    end
+    
     def job
-        puts "#{self.name}です。私はRubyとRailsでWebアプリケーションを作ります。"
+        puts "#{self.akaide}です。私はRubyとRailsでWebアプリケーションを作ります。"
     end
     
 end
